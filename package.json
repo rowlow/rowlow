@@ -1,0 +1,25 @@
+{
+  "name": "rowlow",
+  "version": "0.1.0",
+  "description": "A dead simple, modular web frontend framework with mobile in mind",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rowlow/rowlow.git"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "scss",
+    "bem"
+  ],
+  "author": "Roland Lösslein <info@weaintplasti.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rowlow/rowlow/issues"
+  },
+  "homepage": "https://github.com/rowlow/rowlow#readme"
+}
