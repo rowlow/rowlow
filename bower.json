@@ -1,0 +1,23 @@
+{
+  "name": "ROW LOW",
+  "version": "0.1.0",
+  "homepage": "http://rowlow.github.io/",
+  "authors": [
+    "Roland Lösslein <info@weaintplastic.com>"
+  ],
+  "description": "A dead simple, modular web frontend framework with mobile in mind",
+  "keywords": [
+    "web",
+    "framework",
+    "scss",
+    "bem"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
