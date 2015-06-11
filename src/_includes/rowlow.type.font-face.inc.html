@@ -1,0 +1,44 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.font-face" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.type.font-face</h1>
+<p>A font-face wrapper to quickly define custom fonts for Row Low framework</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.type.font-face</code></pre>
+<h2>Functions</h2>
+<pre><code class="language-css">/**
+ * $font-name Name of the font-family
+ * $class-name The name of the class that will be generated
+**/
+rowlow-font-face($font-name, $class-name, $file, $fallback: sans-serif, $weight: normal, $style: normal)</code></pre>
+<h2>Usage</h2>
+<h3>SCSS</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-font-face-namespace: "namespace-";
+
+@import "bower_components/rowlow.type.font-face/main.scss"
+
+@include rowlow-font-face('Futura Medium', 'futura-medium', '../fonts/futura-medium/futura-medium');
+
+/* preferred method */
+h1{
+    @extend .font-face--futura-medium;
+}
+
+/* alternate method */
+h1{
+    font-family: "Futura Medium", sans-serif
+}
+</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;h1 class="font-face--futura-medium"&gt;This is Futura&lt;/h1&gt;</code></pre>
+
+	</div>
+</div>

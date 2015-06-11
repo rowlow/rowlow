@@ -1,0 +1,37 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.text-spacing" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.type.text-spacing</h1>
+<p>A little util to take control over text spacing via CSS selectors</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.type.text-spacing</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-text-spacing-namespace // Specific module namespace</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-text-spacing-namespace: "namespace-";
+
+@import "bower_components/rowlow.type.text-spacing/main.scss"</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;h1 class="text-spacing--subtitled"&gt;&lt;/h1&gt;
+&lt;h1 class="text-transform--line-collapse"&gt;&lt;/h1&gt;</code></pre>
+		<h2>Examples</h2>
+
+		<div class="row">
+			<div class="gutter--s--1">
+				<h1 class="text-spacing--subtitled">Hamburgefontensiv</h1>
+				<h4>This is the subtitle</h4>
+				<h1 class="text-spacing--line-collapse text-transform--uppercase">Hamburgefontensiv <br>Hamburgefontensiv</h1>
+			</div>
+		</div>
+
+	</div>
+</div>

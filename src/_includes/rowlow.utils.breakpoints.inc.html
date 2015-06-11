@@ -1,0 +1,56 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="utils.breakpoints" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.utils.breakpoints</h1>
+<p>Defining a map of breakpoint names and value pairs, this module generates will help you maintain responsive breakpoints for your project. By default, this module will give you breakpoints at 1px, 768px, 992px and 1200px.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.utils.breakpoints</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-breakpoints: (
+    "s":    1,
+    "m":    768,
+    "l":    992,
+    "xl":   1200
+);</code></pre>
+<h2>Functions</h2>
+<pre><code class="language-css">rowlow-breakpoint()         // Returns a breakpoint value by a given name
+rowlow-breakpoint-min()     // Returns the breakpoint's min value by a given name
+rowlow-breakpoint-max()     // Returns the breakpoint's max value by a given name</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Overwrite breakpoint map (optional) */
+$rowlow-breakpoints: (
+    "s":    1,
+    "m":    992,
+    "l":    1200,
+    "xl":   1400,
+    "xxl":  1600
+);
+
+@import "bower_components/rowlow.utils.breakpoints/main.scss"</code></pre>
+<h3>SCSS</h3>
+<pre><code class="language-css">@media (min-width: rowlow-breakpoint-min("s") + px) {
+
+}
+
+@media (min-width: rowlow-breakpoint-min("m") + px) {
+
+}
+
+@media (min-width: rowlow-breakpoint-min("l") + px) {
+
+}
+
+@media (min-width: rowlow-breakpoint-min("xl") + px) {   
+
+}</code></pre>
+
+	</div>
+</div>

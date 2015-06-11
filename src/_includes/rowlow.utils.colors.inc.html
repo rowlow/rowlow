@@ -1,0 +1,48 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="utils.colors" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.utils.colors</h1>
+<p>Defining a map of color name and color code pairs, this module generates css selectors for each background, border and text colors.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.utils.colors</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-colors-namespace // Specific module namespace
+$rowlow-colors // Map of colors</code></pre>
+<h2>Functions</h2>
+<pre><code class="language-css">$rowlow-color()</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-colors-namespace: "namespace-";
+
+/* Define color map */
+$rowlow-colors: (
+    "white":    #ffffff,
+    "black":    #000000,
+    "grey":     #cccccc
+);
+
+@import "bower_components/rowlow.utils.colors/main.scss"</code></pre>
+<h3>SCSS</h3>
+<pre><code class="language-css">/* Get color code using a function */
+body{
+    background-color: rowlow-color("grey");
+}</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;!-- Setting a background color via selector --&gt;
+&lt;body class="background-color--grey"&gt;&lt;/body&gt;
+
+&lt;!-- Setting a text color via selector --&gt;
+&lt;h1 class="text-color--grey"&gt;&lt;/h1&gt;
+
+&lt;!-- Setting a border color via selector --&gt;
+&lt;h1 class="border-color--grey"&gt;&lt;/h1&gt;</code></pre>
+	</div>
+</div>

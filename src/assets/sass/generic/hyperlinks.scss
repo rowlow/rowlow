@@ -1,0 +1,7 @@
+a, a:visited{
+	color: rowlow-color('black');
+
+	&:hover{
+		color: rowlow-color('grey');
+	}
+}

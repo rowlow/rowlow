@@ -1,0 +1,62 @@
+.chapter-nav{
+	position: relative;
+	padding: rowlow-gutter(4);
+
+	> ul{
+		margin-bottom: 1em;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		
+		li{
+			margin: 0;			
+			
+			a{
+				color: rowlow-color("grey-dark");
+				font-size: 14px;
+				text-decoration: none;
+				display: inline-block;
+				margin: .1em 0;
+
+
+				&:hover{
+					color: rowlow-color('black');
+				}
+				&.active{
+					color: rowlow-color('celeste');
+				}
+			}
+		}
+
+		> li{
+			> a{
+				
+			}
+			> ul{
+				//display: none;
+				margin: 0 0 .5em 1em;
+				> li{
+
+				}
+				&.open{
+					display: block;
+				}
+			}
+		}
+
+		
+	}
+
+	> ul > li > a{
+		color: rowlow-color('black');
+	}
+
+	&.fixed{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		overflow: scroll;
+	}
+}

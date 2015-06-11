@@ -1,0 +1,17 @@
+.row--#{rowlow-breakpoint-min("m")}{
+	max-width: 		rowlow-breakpoint-min("m") + px;
+	@extend .row;
+	@extend .horizontal-align--s--center;
+}
+
+.row--#{rowlow-breakpoint-min("l")}{
+	max-width: 		rowlow-breakpoint-min("l") + px;
+	@extend .row;
+	@extend .horizontal-align--s--center;
+}
+
+.row--#{rowlow-breakpoint-min("xl")}{
+	max-width: 		rowlow-breakpoint-min("xl") + px;
+	@extend .row;
+	@extend .horizontal-align--s--center;
+}

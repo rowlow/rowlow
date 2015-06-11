@@ -1,0 +1,76 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="resources.kickstarter" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+<h1>Getting started: rowlow.resources.kickstarter</h1>
+<p>Giving you a quick start into Row Low, kickstarter is the perfect an initial setup for your project with all Row Low components. Row Low works perfectly with Normalize.css and therefore it is additionally included into kickstarter.</p>
+<h2>Requirements</h2>
+<p>Working with Row Low's Kickstarter requires a small and easy to use technology stack and at least some knowledge in how to use it. </p>
+<ul>
+<li>Node Package Manager</li>
+<li>Bower</li>
+<li>Gulp</li>
+</ul>
+<h2>Install</h2>
+<ol>
+<li>Download/Clone the latest release of <a href="https://github.com/rowlow/rowlow.resources.kickstarter">rowlow.resources.kickstarter</a></li>
+<li>Install <a href="https://nodejs.org/">nodeJS/</a> on your computer</li>
+<li>Install <code class="language-css">bower</code> packages
+<pre><code class="language-css">$ bower install</code></pre></li>
+<li>Install <code>node</code> packages
+<pre><code class="language-css">$ npm install</code></pre></li>
+<li>Install and run <code>gulp</code> to build your project
+<pre><code class="language-css">$ npm install --global gulp
+$ gulp</code></pre></li>
+</ol>
+<h2>Folder Structure</h2>
+<pre><code class="language-css">    dist
+    |`- assets
+    |   `- css
+    |   |   `- styles.min.js
+    |   `- fonts
+    |   `- img
+    |   `- js
+    |       `- plugins.min.js
+    |       `- scripts.min.js
+    |       `- vendor.min.js
+    |`- index.html
+    |
+    src
+    |`- assets
+    |   `- fonts
+    |   `- img
+    |   `- js
+    |   |   `- plugins
+    |   |   `- scripts
+    |   |   |   `- main.js
+    |   |   `- plugins.js
+    |   |   `- scripts.js
+    |   |   `- vendor.js
+    |   `- sass
+    |       `- generic
+    |       `- specific
+    |       `- settings.scss
+    |       `- styles.scss
+    |`- index.html
+    |
+    bower.js
+    |
+    gulpfile.js
+    |
+    package.js</code></pre>
+<p><code class="language-css">gulp</code> is used to build everything that is located in the <code class="language-css">src</code> directory and move it to <code class="language-css">dist</code>. </p>
+<p>You don't have to follow the rules on how to split up your javascript and scss files. If you change this, please don't forget to edit your <code class="language-css">gulpfile</code>. </p>
+
+	
+		<div class="clearfix"></div>
+
+	</div>
+</div>

@@ -1,0 +1,1307 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]--><html>
+	<head>
+		<title>ROW LOW - A dead simple, modular web frontend framework with mobile in mind</title>
+
+		<!-- META DATA -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="A dead simple, modular web frontend framework with mobile in mind"/>
+		<meta name="author" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="./assets/css/styles.min.css" />
+
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript" src="./assets/js/respond.min.js"></script>
+	</head>
+	<body>
+		<div class="site-wrapper">
+			<div class="site-main gutter-bottom--s--4 background-color--white">
+				
+				<div class="block block--hero background-color--blue-160">
+				
+					<div class="row row--1200 gutter-vertical--s--8 gutter-horizontal--s--1">
+				
+						<div class="column--s--8of12 column-offset--s--2of12 column--m--6of12 column-offset--m--3of12 column--l--4of12 column-offset--l--4of12 gutter--s--1 text-align--s--center">
+				
+							<img src="./assets/img/rowlow.svg" class="responsive" alt=""/>
+				
+							<h4 class="text-color--white gutter--top--s-3">A modular web framework <br>with mobile in mind</h4>
+				
+						</div>
+				
+					</div>
+				
+				</div>
+
+								<div class="block block--intro background-color--grey-lighter gutter-vertical--s-4 gutter-vertical--m--8">
+									<div class="row--1200 gutter--s--2 gutter--m--1">
+										<div class="row gutter-vertical--s--2 gutter-vertical--m--4 gutter-horizontal--s--2 text-align--s--center text-align--m--left">
+											<h4 clss="subtitled">Row Low is a dead simple modular web framework based on SCSS. What has started as a personal toolkit for fast web development finally became an open source project available to use and contribute for everyone. Row Low is equipped with everything you need to build and structure the layout of responsive websites but is not a UI framework. </h4>
+										</div>
+										<div class="row gutter-vertical--s--2 gutter-vertical--m--4">
+											<div class="column--m--3of12 gutter--s--2 text-align--s--center">
+												<h3 class="text-color--celeste">Modular</h3>
+												<p>Every component is shipped as a separate bower package. It is totally up to you which components you want to include with full control on the size of your project.</p>
+											</div>
+											<div class="column--m--3of12 gutter--s--2 text-align--s--center">
+												<h3 class="text-color--celeste">Customizeable</h3>
+												<p>Almost everything in Row Low is configurable. You have full control on namespaces, column layouts, breakpoints and aspect ratios to name a few.</p>
+											</div>
+											<div class="column--m--3of12 gutter--s--2 text-align--s--center">
+												<h3 class="text-color--celeste">BEM-Syntax</h3>
+												<p>Keeping things clear, Row Low was built following the approach of <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM-Syntax</a>. This self explanatory naming scheme makes working with Row Low simple and future proof.</p>
+											</div>
+											<div class="column--m--3of12 gutter--s--2 text-align--s--center">
+												<h3 class="text-color--celeste">Open Source</h3>
+												<p>Row Low is released under MIT Licence and avialable on Github. Feel free to fork it on GitHub.</p>
+												<a href="https://github.com/rowlow"  target="_blank" class="button button--ghost button--celeste-to-blue-80"><span class="button__label">Fork on GitHub</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+				<div class="row row--1200 gutter--s--1">
+
+					<div class="column--m--3of12 hidden--s">
+						<div class="gutter--s--1">
+							<nav class="chapter-nav">
+								<ul>
+									<li>
+										<a href="#resources.kickstarter">Getting Started</a>
+									</li>
+									<li>
+										<a href="#">Layout</a>
+										<ul>
+											<li><a href="#layout.grid">Grid</a></li>
+											<li><a href="#layout.horizontal-align">Horizontal Align</a></li>
+											<li><a href="#layout.layer-group">Layer Group</a></li>
+											<li><a href="#layout.ratio-container">Ratio Container</a></li>
+											<li><a href="#layout.vertical-align">Vertical Align</a></li>
+										</ul>
+									</li>
+							
+									<li>
+										<a>Media</a>
+										<ul>
+											<li><a href="#media.image">Image</a></li>
+										</ul>
+									</li>
+									
+									<li>
+										<a href="#">Motion</a>
+										<ul>
+											<li><a href="#motion.easing">Easing</a></li>
+										</ul>
+									</li>
+							
+									<li>
+										<a href="#">Settings</a>
+										<ul>
+											<li><a href="#settings.default">Default Settings</a></li>
+										</ul>
+									</li>
+							
+									<li>
+										<a href="#">Type</a>
+										<ul>
+											<li><a href="#type.font-face">Font Face</a></li>
+											<li><a href="#type.text-align">Text Align</a></li>
+											<li><a href="#type.text-transform">Text Transform</a></li>
+											<li><a href="#type.text-decoration">Text Decoration</a></li>
+											<li><a href="#type.text-spacing">Text Spacing</a></li>
+										</ul>
+									</li>
+							
+									<li>
+										<a href="#">Utils</a>
+										<ul>
+											<li><a href="#utils.breakpoints">Breakpoints</a></li>
+											<li><a href="#utils.clearfix">Clearfix</a></li>
+											<li><a href="#utils.colors">Colors</a></li>
+											<li><a href="#utils.visibility">Visibility</a></li>
+										</ul>
+									</li>
+									
+								</ul>
+								
+							</nav>
+
+						</div>
+					</div>
+					<div class="column--m--9of12">
+						<div class="gutter--s--1">
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="resources.kickstarter" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+<h1>Getting started: rowlow.resources.kickstarter</h1>
+<p>Giving you a quick start into Row Low, kickstarter is the perfect an initial setup for your project with all Row Low components. Row Low works perfectly with Normalize.css and therefore it is additionally included into kickstarter.</p>
+<h2>Requirements</h2>
+<p>Working with Row Low's Kickstarter requires a small and easy to use technology stack and at least some knowledge in how to use it. </p>
+<ul>
+<li>Node Package Manager</li>
+<li>Bower</li>
+<li>Gulp</li>
+</ul>
+<h2>Install</h2>
+<ol>
+<li>Download/Clone the latest release of <a href="https://github.com/rowlow/rowlow.resources.kickstarter">rowlow.resources.kickstarter</a></li>
+<li>Install <a href="https://nodejs.org/">nodeJS/</a> on your computer</li>
+<li>Install <code class="language-css">bower</code> packages
+<pre><code class="language-css">$ bower install</code></pre></li>
+<li>Install <code>node</code> packages
+<pre><code class="language-css">$ npm install</code></pre></li>
+<li>Install and run <code>gulp</code> to build your project
+<pre><code class="language-css">$ npm install --global gulp
+$ gulp</code></pre></li>
+</ol>
+<h2>Folder Structure</h2>
+<pre><code class="language-css">    dist
+    |`- assets
+    |   `- css
+    |   |   `- styles.min.js
+    |   `- fonts
+    |   `- img
+    |   `- js
+    |       `- plugins.min.js
+    |       `- scripts.min.js
+    |       `- vendor.min.js
+    |`- index.html
+    |
+    src
+    |`- assets
+    |   `- fonts
+    |   `- img
+    |   `- js
+    |   |   `- plugins
+    |   |   `- scripts
+    |   |   |   `- main.js
+    |   |   `- plugins.js
+    |   |   `- scripts.js
+    |   |   `- vendor.js
+    |   `- sass
+    |       `- generic
+    |       `- specific
+    |       `- settings.scss
+    |       `- styles.scss
+    |`- index.html
+    |
+    bower.js
+    |
+    gulpfile.js
+    |
+    package.js</code></pre>
+<p><code class="language-css">gulp</code> is used to build everything that is located in the <code class="language-css">src</code> directory and move it to <code class="language-css">dist</code>. </p>
+<p>You don't have to follow the rules on how to split up your javascript and scss files. If you change this, please don't forget to edit your <code class="language-css">gulpfile</code>. </p>
+
+	
+		<div class="clearfix"></div>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.grid" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<h1>rowlow.layout.grid</h1>
+		<p>The grid module of Row Low is probably one of the most powerful and complex modules in this framework. Basically it helps you build nice responsive grid layouts, but additionally it provides you tools to shift and offset columns plus to add the right gutter to your grid.</p>
+		<p>The grid is strongly connected with the breakpoints you've configured in the <code>rowlow.utils.breakpoints</code> module. Not only the name of your breakpoints, but also the total number of breakpoitns an their value will affect your responsive grid. </p>
+		<p>Additionally Row Low gives you the possibility to not just use one grid layout at a time, you are able to run a 10-column-based layout in parallel to a 12-column-based layout if your project requires this.</p>
+		<p>But please be careful. With every breakpoint and column-layout you add, you multiply the CSS selectors that will be generated by this module.</p>
+		<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.responsive-grid</code></pre>
+		<h2>Settings</h2>
+<pre><code class="language-css">
+$rowlow-grid-namespace: "";             // Specific module namespace
+$rowlow-grid-columns:   12;             // List of columns for your layout
+$rowlow-grid-gutter:    20;             // The gutter width</code></pre>
+		<h2>Usage</h2>
+		<h3>Rows &amp; Columns</h3>
+		<h4>CSS Selector Naming Scheme</h4>
+<pre class="language-css"><code>.{rowlow-grid-namespace}column--{breakpoint-name}--{column}of{total-columns}</code></pre>
+<h4>Usage</h4>
+<pre><code class="language-markup">
+&lt;div class="row"&gt;
+   	&lt;div class="column--m--6of12 column--l--4of12"&gt;
+
+    &lt;/div&gt;
+    &lt;div class="column--m--6of12 column--l--4of12"&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>Column Offset</h3>
+<h4>CSS Selector Naming Scheme</h4>
+<pre><code class="language-css">.{rowlow-grid-namespace}column-offset--{breakpoint-name}--{column}of{total-columns}</code></pre>
+<h4>Usage</h4>
+<pre><code  class="language-markup">
+&lt;div class="row"&gt;
+    &lt;div class="column--m--4of12 column-offset--m--4of12"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h3>Column Shifting</h3>
+<h4>CSS Selector Naming Scheme</h4>
+<pre><code class="language-css">
+.{rowlow-grid-namespace}column-push--{breakpoint-name}--{column}of{total-columns}
+.{rowlow-grid-namespace}column-pull--{breakpoint-name}--{column}of{total-columns}</code></pre>
+<h4>Usage</h4>
+<pre><code class="language-markup">
+&lt;div class="row"&gt;
+    &lt;div class="column--m--4of12 column-push--m--4of12"&gt;&lt;/div&gt;
+    &lt;div class="column--m--4of12 column-pull--m--4of12"&gt;&lt;/div&gt;
+    &lt;div class="column--m--4of12"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h3>Column Gutter</h3>
+<h4>CSS Selector Naming Scheme</h4>
+<pre><code class="language-css">
+.gutter--{breakpoint-name}--{gutter-multiplier}
+.gutter-top--{breakpoint-name}--{gutter-multiplier}
+.gutter-right--{breakpoint-name}--{gutter-multiplier}
+.gutter-bottom--{breakpoint-name}--{gutter-multiplier}
+.gutter-left--{breakpoint-name}--{gutter-multiplier}
+.gutter-vertical--{breakpoint-name}--{gutter-multiplier}
+.gutter-horizontal--{breakpoint-name}--{gutter-multiplier}</code></pre>
+	<h4>Usage</h4>
+<pre><code class="language-markup">
+&lt;div class="row"&gt;
+    &lt;div class="column--m--6of12"&gt;
+        &lt;div class="gutter--s--2 gutter--m--1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column--m--6of12"&gt;
+        &lt;div class="gutter-top--s--2 gutter-top--m--1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column--m--6of12"&gt;
+        &lt;div class="gutter-right--s--2 gutter-right--m--1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column--m--6of12"&gt;
+        &lt;div class="gutter-bottom--s--2 gutter-bottom--m--1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column--m--6of12"&gt;
+        &lt;div class="gutter-left--s--2 gutter-left--m--1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column--m--6of12"&gt;
+        &lt;div class="gutter-vertical--s--2 gutter-vertical--m--1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="column--m--6of12"&gt;
+        &lt;div class="gutter-horizontal--s--2 gutter-horizontal--m--1"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+	<h2>Examples</h2>
+
+	<h4>Basic Grid</h4>
+	<div class="example-grid">
+		<div class="row">
+			<div class="column--m--3of12 gutter--s--1">
+				<div>three of twelve</div>
+			</div>
+			<div class="column--m--3of12 gutter--s--1">
+				<div>three of twelve</div>
+			</div>
+			<div class="column--m--3of12 gutter--s--1">
+				<div>three of twelve</div>
+			</div>
+			<div class="column--m--3of12 gutter--s--1">
+				<div>three of twelve</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column--m--5of10 gutter--s--1">
+				<div>five of ten</div>
+			</div>
+			<div class="column--m--5of10 gutter--s--1">
+				<div>five of ten</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column--m--4of12 gutter--s--1">
+				<div>four of twelve</div>
+			</div>
+			<div class="column--m--8of12 gutter--s--1">
+				<div>eight of twelve</div>
+			</div>
+		</div>
+	</div>
+
+	<h4>Nested Grid</h4>
+	<div class="example-grid">
+		<div class="row">
+			<div class="column--m--6of12">
+				<div class="gutter--s--1">
+					<div>one</div>
+				</div>
+				<div class="row">
+					<div class="column--s--6of12 gutter--s--1">
+						<div>one:one</div>
+					</div>
+					<div class="column--s--6of12 gutter--s--1">
+						<div>one:two</div>
+					</div>
+				</div>
+			</div>
+			<div class="column--m--6of12">
+				<div class="gutter--s--1">
+					<div>two</div>
+				</div>
+				<div class="row">
+					<div class="column--m--4of12 gutter--s--1">
+						<div>two:one</div>
+					</div>
+					<div class="column--m--4of12 gutter--s--1">
+						<div>two:two</div>
+					</div>
+					<div class="column--m--4of12 gutter--s--1">
+						<div>two:three</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h4>Shift Columns</h4>
+	<div class="example-grid">
+		<div class="row">
+			<div class="column--m--4of12 column-push--m--4of12 gutter--s--1">
+				<div>
+					one (was pushed)
+				</div>
+			</div>
+			<div class="column--m--4of12 column-pull--m--4of12 gutter--s--1">
+				<div>
+					two (was pulled)
+				</div>
+			</div>
+			<div class="column--m--4of12 gutter--s--1">
+				<div>
+					three
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h4>Offset Columns</h4>
+	<div class="example-grid">
+		<div class="row">
+			<div class="column--s--6of12 column--m--4of12 gutter--s--1">
+				<div>
+					one
+				</div>
+			</div>
+			<div class="column--s--6of12 column--m--4of12 column-offset--m--4of12 gutter--s--1">
+				<div>
+					two (was offset)
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.horizontal-align" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<h1>rowlow.layout.horizontal-align</h1>
+		<p>This module adds CSS selectors in order to align block or inline-block elements in HTML</p>
+		<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.horizontal-align</code></pre>
+		<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-horizontal-align-namespace // Specific module namespace</code></pre>
+		<h2>Usage</h2>
+		<h3>Setup</h3>
+<pre><code class="language-css">
+/* Set modules namespace (optional) */
+$rowlow-horizontal-align-namespace: "namespace-";
+
+@import "bower_components/rowlow.layout.horizontal-align/main.scss"
+</code></pre>
+		<h3>CSS Selector Naming Scheme</h3>
+<pre><code class="language-css">
+.{rowlow-horizontal-align-namespace}horizontal-align--{breakpoint}--{left, center, right}
+</code></pre>
+		<h3>HTML</h3>
+<pre><code class="language-markup">&lt;div class="horizontal-align--s--center horizontal-align--m--left"&gt;&lt;/div&gt;</code></pre>
+
+		<h2>Examples</h2>
+		<div class="row">
+			<div class="column--s--12of12 gutter--s--1">
+					<div class="horizontal-align--s--left background-color--grey-lighter text-align--s--center gutter--s--1" style="width: 200px;">
+						left
+					</div>
+			</div>
+			<div class="column--s--12of12 gutter--s--1">
+				<div class="horizontal-align--s--center background-color--grey-lighter text-align--s--center gutter--s--1" style="width: 200px;">
+					center
+				</div>
+			</div>
+			<div class="column--s--12of12 gutter--s--1">
+				<div class="horizontal-align--s--right background-color--grey-lighter text-align--s--center gutter--s--1" style="width: 200px;">
+					right
+				</div>
+			</div>	
+		</div>
+		
+
+	</div>
+</div>
+
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.layer-group" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<h1>rowlow.layout.layer-group</h1>
+		<p>This module can eaily be used to create overlays or layerstacks in HTML.</p>
+		<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.layer-group</code></pre>
+		<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-layer-group-namespace // Specific module namespace</code></pre>
+		<h2>Usage</h2>
+		<h3>Setup</h3>
+<pre><code class="language-css">
+/* Set modules namespace (optional) */
+$rowlow-layer-group-namespace: "namespace-";
+
+@import "bower_components/rowlow.layout.layer-group/main.scss"
+</code></pre>
+		<h3>HTML</h3>
+<pre><code class="language-markup">
+&lt;div class="layer-group"&gt;
+    &lt;img src="http://placehold.it/840x560" alt=""/&gt;
+    &lt;div class="layer"&gt;[...]&lt;/div&gt;
+    &lt;div class="layer"&gt;[...]&lt;/div&gt;
+    [...]
+&lt;/div&gt;
+</code></pre>
+
+    	<h2>Examples</h2>
+    	<div class="row">
+    		<div class="column--s--12of12">
+    			<div class="layer-group">
+    				<div class="gutter--s--4">
+    					<div style="background: rgba(0,0,0,.3); width: 200px; height: 200px;">
+    						<h5 class="gutter--s--1 text-color--white">Layer 0</h5>
+    					</div>
+    				</div>
+    				<div class="layer">
+    					<div style="background: rgba(0,0,0,.2); width: 200px; height: 200px;">
+    						<h5 class="gutter--s--1 text-color--white">Layer 1</h5>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		
+    	</div>
+
+   	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.ratio-container" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+<h1>rowlow.layout.ratio-container</h1>
+<p>A module for creating DOM container with a defined aspect ratio. Preconfigured ratios are 1by1, 4by3, 16by9 and 21by9, but can be extended upon your needs.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.ratio-container</code></pre>
+<h2>Settings</h2>
+<pre><code class="language-css">rowlow-ratio-container-namespace // Specific module namespace
+    rowlow-ratios // List of ratios</code></pre>
+<h2>Usage</h2>
+<h3>SCSS</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-ratio-container-namespace: "namespace-";
+
+/* Overwrite ratio list (optional) */
+$rowlow-ratios: (
+    (1,1),
+    (4,3),
+    (16,9),
+    (21,9)
+)
+
+@import "bower_components/rowlow.layout.ratio-container/main.scss"</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;div class="ratio-container--s--21by9 ratio-container--l--16by9"&gt;&lt;/div&gt; </code></pre>
+	
+		<h2>Examples</h2>
+		<div class="row">
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--1by1">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>1 by 1</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--4by3">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>4 by 3</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--16by9">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>16 by 9</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--21by9">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>21 by 9</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.vertical-align" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">		
+		<h1>rowlow.layout.vertical-align</h1>
+		<p>This module adds functionality to vertical align not just inline or table elements. A vertical align wrapper in combinations with the <code>rowlow.layout.layer-group</code>module helps you to vertically align things with an unknown height.</p>
+		<p>You can take control of the vertical alignment for any responsive breakpoint separately.</p>
+		<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.vertical-align</code></pre>
+		<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-vertical-align-namespace // Specific module namespace</code></pre>
+		<h2>Usage</h2>
+		<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-vertical-align-namespace: "namespace-";
+
+@import "bower_components/rowlow.layout.vertical-align/main.scss"</code></pre>
+		<h3>CSS Selector Naming Scheme</h3>
+<pre><code class="language-css">
+.{rowlow-vertical-align-namespace}vertical-align--{breakpoint}--{top, middle, bottom}
+.{rowlow-vertical-align-namespace}vertical-align-helper</code></pre>
+		<h3>HTML</h3>
+<pre><code class="language-markup">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td class="vertical-align--s--top"&gt;&lt;/td&gt;
+        &lt;td class="vertical-align--s--middle"&gt;&lt;/td&gt;
+        &lt;td class="vertical-align--s--bottom"&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div class="vertical-align-helper" style="height: 200px"&gt;
+    &lt;div class="vertical-align--s--middle"&gt;
+        [...]
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+		<h2>Examples</h2>
+		
+		<div class="row">
+			<div class="column--s--12of12">
+			<table>
+				<tr>
+					<td class="gutter--s--1"><img src="http://placehold.it/200x200" alt=""></td>
+					<td class="gutter--s--1 vertical-align--s--top">Top</td>
+					<td class="gutter--s--1 vertical-align--s--middle">Middle</td>
+					<td class="gutter--s--1 vertical-align--s--bottom">Bottom</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="column--s--3of12 gutter--s--1">
+			<div class="background-color--grey-200 vertical-align-helper layer-group" style="height: 200px">
+				<div class="vertical-align--s--top text-align--s--center">
+					<div class="gutter--s--1">
+						Top
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column--s--3of12 gutter--s--1">
+			<div class="background-color--grey-200 vertical-align-helper layer-group" style="height: 200px">
+				<div class="vertical-align--s--middle text-align--s--center">
+					<div class="gutter--s--1">
+						Middle
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column--s--3of12 gutter--s--1">
+			<div class="background-color--grey-200 vertical-align-helper layer-group" style="height: 200px">
+				<div class="vertical-align--s--bottom text-align--s--center">
+					<div class="gutter--s--1">
+						Bottom
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+		
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="media.image" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<h1>rowlow.media.image</h1>
+		<p>A module for displaying responsive images</p>
+		<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.media.image</code></pre>
+		<h2>Settings</h2>
+<pre><code class="language-css">rowlow-image-namespace // Specific module namespace</code></pre>
+		<h2>Usage</h2>
+		<h3>HTML</h3>
+<pre><code class="language-markup">&lt;img src="" alt="" class="responsive"/&gt;</code></pre>
+
+		<h2>Example</h2>
+
+		<div class="row">
+			<div class="column--m--6of12 gutter--s--1">
+				<img src="http://placehold.it/800x500" alt="" class="responsive">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="motion.easing" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.motion.easing</h1>
+<p>A easing module with loads of easing functions for Row Low framework</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.motion.easing</code></pre>
+<h2>Functions</h2>
+<pre><code class="language-css">rowlow-ease() // Returns the easing function by a given name</code></pre>
+<h2>Usage</h2>
+<h3>SCSS</h3>
+<pre><code class="language-css">a:hover{
+    transition: all .1s rowlow-ease("in-out-quad") .2s;
+}</code></pre>
+<h3>Easing Functions</h3>
+<pre><code class="language-css">
+linear
+ease
+in
+out
+in-out
+in-sine
+out-sine
+in-out-sine 
+in-quad
+out-quad
+in-out-quad
+in-cubic  
+out-cubic 
+in-out-cubic
+in-quart 
+out-quart  
+in-out-quart 
+in-quint
+out-quint  
+in-out-quint
+in-expo
+out-expo 
+in-out-expo 
+in-circ
+out-circ
+in-out-circ
+in-back"
+out-back 
+in-out-back</code></pre>
+
+		<h2>Example</h2>
+
+		<div class="row">
+			<div class="column--m--6of12 gutter--s--1">
+				<img src="http://placehold.it/800x500" alt="" class="responsive">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="settings.default" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.settings.default</h1>
+<p>Row Low default settings hold important generic settings that can be overwritten depending on your needs.</p>
+<h2><code>$rowlow-namespace</code></h2>
+<p>Row Low's mixins, variables and functions are prefixed with <code>rowlow-</code> per se. Generated CSS selectors however, are not prefixed by default. In order to change this behavior, you can define a generic namespace that will be prefixed to any CSS selector using <code>$rowlow-namespace</code>. Additionally, every Row Low module that is generating CSS selectors will have a additional variable to set a specific namespace. By default this specific namespace is equal to the generic namespace. Please look up the module's documentation for more details.</p>
+<h3>Usage</h3>
+<pre><code class="language-css">$rowlow-namespace: "rowlow-";</code></pre>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.font-face" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.type.font-face</h1>
+<p>A font-face wrapper to quickly define custom fonts for Row Low framework</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.type.font-face</code></pre>
+<h2>Functions</h2>
+<pre><code class="language-css">/**
+ * $font-name Name of the font-family
+ * $class-name The name of the class that will be generated
+**/
+rowlow-font-face($font-name, $class-name, $file, $fallback: sans-serif, $weight: normal, $style: normal)</code></pre>
+<h2>Usage</h2>
+<h3>SCSS</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-font-face-namespace: "namespace-";
+
+@import "bower_components/rowlow.type.font-face/main.scss"
+
+@include rowlow-font-face('Futura Medium', 'futura-medium', '../fonts/futura-medium/futura-medium');
+
+/* preferred method */
+h1{
+    @extend .font-face--futura-medium;
+}
+
+/* alternate method */
+h1{
+    font-family: "Futura Medium", sans-serif
+}
+</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;h1 class="font-face--futura-medium"&gt;This is Futura&lt;/h1&gt;</code></pre>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.text-align" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.type.text-align</h1>
+<p>This text util helps you to fully control text aligns amog all responsive breakpoints.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.type.text-align</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-text-align-namespace // Specific module namespace</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+    $rowlow-text-align-namespace: "namespace-";
+
+    @import "bower_components/rowlow.type.text-align/main.scss"</code></pre>
+<h3>CSS Selector Naming Scheme</h3>
+<pre><code class="language-css">{rowlow-text-align-namespace}text-align--{breakpoint-name}--{left, right, center, justify}</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-css">&lt;p class="text-align--s--center text-align--m--right"&gt;&lt;/p&gt;</code></pre>
+	
+		<h2>Examples</h2>
+
+		<div class="row">
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--left text-align--s--center text-align--m--justify text-align--l--right">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--center text-align--s--justify text-align--m--right text-align--l--left">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--justify text-align--s--right text-align--m--left text-align--l--center">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--right text-align--s--left text-align--m--center text-align--l--justify">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.text-transform" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.type.text-transform</h1>
+<p>A little util to take control over text transforms via CSS selectors</p>
+<h2>Install</h2>
+<pre><code>    bower install --save rowlow.type.text-transform</code></pre>
+<h2>Variables</h2>
+<pre><code>    $rowlow-text-transform-namespace // Specific module namespace</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code>    /* Set modules namespace (optional) */
+    $rowlow-text-transform-namespace: "namespace-";
+
+    @import "bower_components/rowlow.type.text-transform/main.scss"</code></pre>
+<h3>HTML</h3>
+<pre><code>    &lt;h1 class="text-transform--uppercase"&gt;&lt;/h1&gt;
+    &lt;h1 class="text-transform--lowercase"&gt;&lt;/h1&gt;
+    &lt;h1 class="text-transform--none"&gt;&lt;/h1&gt;</code></pre>
+	
+		<h2>Examples</h2>
+
+		<div class="row">
+		<div class="gutter--s--1">
+			<h3 class="text-transform--uppercase">Hamburgefontensiv</h3>
+			<h3 class="text-transform--lowercase">Hamburgefontensiv</h3>
+			<h3 class="text-transform--none">Hamburgefontensiv</h3>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.text-decoration" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+
+<h1>rowlow.type.text-decoration</h1>
+<p>A text util to take control over text decorations via CSS selectors</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.type.text-decoration</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-text-decoration-namespace // Specific module namespace</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-text-decoration-namespace: "namespace-";
+
+@import "bower_components/rowlow.type.text-decoration/main.scss"</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;h1 class="text-decoration--underline"&gt;&lt;/h1&gt;
+&lt;h1 class="text-decoration--overline"&gt;&lt;/h1&gt;
+&lt;h1 class="text-decoration--line-through"&gt;&lt;/h1&gt;
+&lt;h1 class="text-decoration--none"&gt;&lt;/h1&gt;</code></pre>
+
+    	<h2>Examples</h2>
+    	<div class="row">
+			<div class="gutter--s--1">
+				<h3 class="text-decoration--underline">Hamburgefontensiv</h3>
+				<h3 class="text-decoration--overline">Hamburgefontensiv</h3>
+				<h3 class="text-decoration--line-through">Hamburgefontensiv</h3>
+				<h3 class="text-decoration--none">Hamburgefontensiv</h3>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.text-spacing" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.type.text-spacing</h1>
+<p>A little util to take control over text spacing via CSS selectors</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.type.text-spacing</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-text-spacing-namespace // Specific module namespace</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-text-spacing-namespace: "namespace-";
+
+@import "bower_components/rowlow.type.text-spacing/main.scss"</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;h1 class="text-spacing--subtitled"&gt;&lt;/h1&gt;
+&lt;h1 class="text-transform--line-collapse"&gt;&lt;/h1&gt;</code></pre>
+		<h2>Examples</h2>
+
+		<div class="row">
+			<div class="gutter--s--1">
+				<h1 class="text-spacing--subtitled">Hamburgefontensiv</h1>
+				<h4>This is the subtitle</h4>
+				<h1 class="text-spacing--line-collapse text-transform--uppercase">Hamburgefontensiv <br>Hamburgefontensiv</h1>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="utils.breakpoints" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.utils.breakpoints</h1>
+<p>Defining a map of breakpoint names and value pairs, this module generates will help you maintain responsive breakpoints for your project. By default, this module will give you breakpoints at 1px, 768px, 992px and 1200px.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.utils.breakpoints</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-breakpoints: (
+    "s":    1,
+    "m":    768,
+    "l":    992,
+    "xl":   1200
+);</code></pre>
+<h2>Functions</h2>
+<pre><code class="language-css">rowlow-breakpoint()         // Returns a breakpoint value by a given name
+rowlow-breakpoint-min()     // Returns the breakpoint's min value by a given name
+rowlow-breakpoint-max()     // Returns the breakpoint's max value by a given name</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Overwrite breakpoint map (optional) */
+$rowlow-breakpoints: (
+    "s":    1,
+    "m":    992,
+    "l":    1200,
+    "xl":   1400,
+    "xxl":  1600
+);
+
+@import "bower_components/rowlow.utils.breakpoints/main.scss"</code></pre>
+<h3>SCSS</h3>
+<pre><code class="language-css">@media (min-width: rowlow-breakpoint-min("s") + px) {
+
+}
+
+@media (min-width: rowlow-breakpoint-min("m") + px) {
+
+}
+
+@media (min-width: rowlow-breakpoint-min("l") + px) {
+
+}
+
+@media (min-width: rowlow-breakpoint-min("xl") + px) {   
+
+}</code></pre>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="utils.clearfix" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.utils.clearfix</h1>
+<p>A clearfix helper for Row Low framework. Clearfixes help you to clear floats in your layout. </p>
+<h2>Settings</h2>
+<pre><code class="language-css">$rowlow-clearfix-namespace //Specific module namespace</code></pre>
+<h2>Mixins</h2>
+<pre><code class="language-css">rowlow-clearfix // Add clearfix specification</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set module namespace (optional) */
+$rowlow-clearfix-namespace: "namespace-";
+
+@import "bower_components/rowlow.utils.clearfix/main.scss"</code></pre>
+<h3>SCSS</h3>
+<pre><code class="language-css">.some-element{
+    @include rowlow-clearfix;
+}
+
+.some-element{
+    @extend .clearfix;
+}</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;div class="clearfix"&gt;&lt;/div&gt;</code></pre>
+	
+		<div class="clearfix"></div>
+
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="utils.colors" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.utils.colors</h1>
+<p>Defining a map of color name and color code pairs, this module generates css selectors for each background, border and text colors.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.utils.colors</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-colors-namespace // Specific module namespace
+$rowlow-colors // Map of colors</code></pre>
+<h2>Functions</h2>
+<pre><code class="language-css">$rowlow-color()</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-colors-namespace: "namespace-";
+
+/* Define color map */
+$rowlow-colors: (
+    "white":    #ffffff,
+    "black":    #000000,
+    "grey":     #cccccc
+);
+
+@import "bower_components/rowlow.utils.colors/main.scss"</code></pre>
+<h3>SCSS</h3>
+<pre><code class="language-css">/* Get color code using a function */
+body{
+    background-color: rowlow-color("grey");
+}</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;!-- Setting a background color via selector --&gt;
+&lt;body class="background-color--grey"&gt;&lt;/body&gt;
+
+&lt;!-- Setting a text color via selector --&gt;
+&lt;h1 class="text-color--grey"&gt;&lt;/h1&gt;
+
+&lt;!-- Setting a border color via selector --&gt;
+&lt;h1 class="border-color--grey"&gt;&lt;/h1&gt;</code></pre>
+	</div>
+</div>
+
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="utils.visibility" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+<h1>rowlow.utils.visibility</h1>
+<p>Take full control of the visibility of elements among all repsonisve breakpoints.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.utils.visibility</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-visibility-namespace // Specific module namespace</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-visibility-namespace: "namespace-";
+
+@import "bower_components/rowlow.utils.visibility/main.scss"</code></pre>
+<h3>CSS Selector Naming Scheme</h3>
+<pre><code class="language-css">{rowlow-visibility-namespace}visible--{breakpoint-name}
+{rowlow-visibility-namespace}hidden--{breakpoint-name}</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;div class="hidden--s"&gt;&lt;/div&gt;
+&lt;div class="visible--m visible--l"&gt;&lt;/div&gt;</code></pre>
+		
+		<h2>Examples</h2>
+
+		<div class="row">
+			<div class="column--s--3of12 gutter--s--1">
+				<div>Visible</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="visible--s">visible--s</div>
+				<div class="hidden--s text-color--grey-200">visible--s</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="visible--m">visible--m</div>
+				<div class="hidden--m text-color--grey-200">visible--m</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="visible--l">visible--l</div>
+				<div class="hidden--l text-color--grey-200">visible--l</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="visible--xl">visible--xl</div>
+				<div class="hidden--xl text-color--grey-200">visible--xl</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column--s--3of12 gutter--s--1">
+				<div>Hidden</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="hidden--s">hidden--s</div>
+				<div class="visible--s text-color--grey-200">hidden--s</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="hidden--m">hidden--m</div>
+				<div class="visible--m text-color--grey-200">hidden--m</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="hidden--l">hidden--l</div>
+				<div class="visible--l text-color--grey-200">hidden--l</div>
+			</div>
+			<div class="column--s--2of12 gutter--s--1">
+				<div class="hidden--xl">hidden--xl</div>
+				<div class="visible--xl text-color--grey-200">hidden--xl</div>
+			</div>
+		</div>
+
+    </div>
+</div>
+
+
+
+
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="site-footer background-color--grey-200">
+				<div class="row--1200 gutter--s--2">
+						<p class="text-align--s-center">crafted with <span class="text-color--red-980">&hearts;</span> by <a target="_blank" href="http://twitter.com/weaintplastic">@weaintplastic</a> and released under MIT Licence on <a target="_blank" href="https://github.com/rowlow">GitHub</a></p>
+				</div>
+			</footer>
+		</div>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-58459047-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		
+		<script type="text/javascript" src="assets/js/vendor.min.js"></script>
+		<script type="text/javascript" src="assets/js/scripts.min.js"></script>
+
+	</body>
+</html>

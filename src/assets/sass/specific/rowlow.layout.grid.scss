@@ -1,0 +1,11 @@
+.example-grid{
+	@extend .clearfix;
+	margin: 0 rowlow-gutter(-1);
+	.row{
+
+		div[class*=gutter] > *{
+			background: rowlow-color("grey-lighter");
+			padding: rowlow-gutter(1);
+		}
+	}
+}

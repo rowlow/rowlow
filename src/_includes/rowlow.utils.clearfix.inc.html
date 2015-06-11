@@ -1,0 +1,37 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="utils.clearfix" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.utils.clearfix</h1>
+<p>A clearfix helper for Row Low framework. Clearfixes help you to clear floats in your layout. </p>
+<h2>Settings</h2>
+<pre><code class="language-css">$rowlow-clearfix-namespace //Specific module namespace</code></pre>
+<h2>Mixins</h2>
+<pre><code class="language-css">rowlow-clearfix // Add clearfix specification</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set module namespace (optional) */
+$rowlow-clearfix-namespace: "namespace-";
+
+@import "bower_components/rowlow.utils.clearfix/main.scss"</code></pre>
+<h3>SCSS</h3>
+<pre><code class="language-css">.some-element{
+    @include rowlow-clearfix;
+}
+
+.some-element{
+    @extend .clearfix;
+}</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;div class="clearfix"&gt;&lt;/div&gt;</code></pre>
+	
+		<div class="clearfix"></div>
+
+	</div>
+</div>

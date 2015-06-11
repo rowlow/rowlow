@@ -1,0 +1,54 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="type.text-align" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+<h1>rowlow.type.text-align</h1>
+<p>This text util helps you to fully control text aligns amog all responsive breakpoints.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.type.text-align</code></pre>
+<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-text-align-namespace // Specific module namespace</code></pre>
+<h2>Usage</h2>
+<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+    $rowlow-text-align-namespace: "namespace-";
+
+    @import "bower_components/rowlow.type.text-align/main.scss"</code></pre>
+<h3>CSS Selector Naming Scheme</h3>
+<pre><code class="language-css">{rowlow-text-align-namespace}text-align--{breakpoint-name}--{left, right, center, justify}</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-css">&lt;p class="text-align--s--center text-align--m--right"&gt;&lt;/p&gt;</code></pre>
+	
+		<h2>Examples</h2>
+
+		<div class="row">
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--left text-align--s--center text-align--m--justify text-align--l--right">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--center text-align--s--justify text-align--m--right text-align--l--left">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--justify text-align--s--right text-align--m--left text-align--l--center">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+			<div class="column--m--6of12 column--l--3of12 gutter--s--1 text-align--s--right text-align--s--left text-align--m--center text-align--l--justify">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores eligendi soluta maiores officia, sequi, tempore ipsa. Sint, exercitationem, perferendis. Temporibus id eius natus sapiente quas cum rem nihil distinctio.
+				</p>
+			</div>
+		</div>
+
+	</div>
+</div>

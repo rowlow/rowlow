@@ -2,9 +2,18 @@
   "name": "rowlow",
   "version": "0.1.0",
   "description": "A dead simple, modular web frontend framework with mobile in mind",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "event-stream": "^3.3.1",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-include": "^1.1.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0"
   },
   "repository": {
     "type": "git",

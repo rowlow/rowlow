@@ -1,0 +1,94 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.vertical-align" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">		
+		<h1>rowlow.layout.vertical-align</h1>
+		<p>This module adds functionality to vertical align not just inline or table elements. A vertical align wrapper in combinations with the <code>rowlow.layout.layer-group</code>module helps you to vertically align things with an unknown height.</p>
+		<p>You can take control of the vertical alignment for any responsive breakpoint separately.</p>
+		<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.vertical-align</code></pre>
+		<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-vertical-align-namespace // Specific module namespace</code></pre>
+		<h2>Usage</h2>
+		<h3>Setup</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-vertical-align-namespace: "namespace-";
+
+@import "bower_components/rowlow.layout.vertical-align/main.scss"</code></pre>
+		<h3>CSS Selector Naming Scheme</h3>
+<pre><code class="language-css">
+.{rowlow-vertical-align-namespace}vertical-align--{breakpoint}--{top, middle, bottom}
+.{rowlow-vertical-align-namespace}vertical-align-helper</code></pre>
+		<h3>HTML</h3>
+<pre><code class="language-markup">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td class="vertical-align--s--top"&gt;&lt;/td&gt;
+        &lt;td class="vertical-align--s--middle"&gt;&lt;/td&gt;
+        &lt;td class="vertical-align--s--bottom"&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div class="vertical-align-helper" style="height: 200px"&gt;
+    &lt;div class="vertical-align--s--middle"&gt;
+        [...]
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+		<h2>Examples</h2>
+		
+		<div class="row">
+			<div class="column--s--12of12">
+			<table>
+				<tr>
+					<td class="gutter--s--1"><img src="http://placehold.it/200x200" alt=""></td>
+					<td class="gutter--s--1 vertical-align--s--top">Top</td>
+					<td class="gutter--s--1 vertical-align--s--middle">Middle</td>
+					<td class="gutter--s--1 vertical-align--s--bottom">Bottom</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="column--s--3of12 gutter--s--1">
+			<div class="background-color--grey-200 vertical-align-helper layer-group" style="height: 200px">
+				<div class="vertical-align--s--top text-align--s--center">
+					<div class="gutter--s--1">
+						Top
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column--s--3of12 gutter--s--1">
+			<div class="background-color--grey-200 vertical-align-helper layer-group" style="height: 200px">
+				<div class="vertical-align--s--middle text-align--s--center">
+					<div class="gutter--s--1">
+						Middle
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column--s--3of12 gutter--s--1">
+			<div class="background-color--grey-200 vertical-align-helper layer-group" style="height: 200px">
+				<div class="vertical-align--s--bottom text-align--s--center">
+					<div class="gutter--s--1">
+						Bottom
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+		
+	</div>
+</div>

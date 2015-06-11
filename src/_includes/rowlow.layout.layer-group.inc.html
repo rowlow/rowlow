@@ -1,0 +1,56 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.layer-group" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<h1>rowlow.layout.layer-group</h1>
+		<p>This module can eaily be used to create overlays or layerstacks in HTML.</p>
+		<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.layer-group</code></pre>
+		<h2>Variables</h2>
+<pre><code class="language-css">$rowlow-layer-group-namespace // Specific module namespace</code></pre>
+		<h2>Usage</h2>
+		<h3>Setup</h3>
+<pre><code class="language-css">
+/* Set modules namespace (optional) */
+$rowlow-layer-group-namespace: "namespace-";
+
+@import "bower_components/rowlow.layout.layer-group/main.scss"
+</code></pre>
+		<h3>HTML</h3>
+<pre><code class="language-markup">
+&lt;div class="layer-group"&gt;
+    &lt;img src="http://placehold.it/840x560" alt=""/&gt;
+    &lt;div class="layer"&gt;[...]&lt;/div&gt;
+    &lt;div class="layer"&gt;[...]&lt;/div&gt;
+    [...]
+&lt;/div&gt;
+</code></pre>
+
+    	<h2>Examples</h2>
+    	<div class="row">
+    		<div class="column--s--12of12">
+    			<div class="layer-group">
+    				<div class="gutter--s--4">
+    					<div style="background: rgba(0,0,0,.3); width: 200px; height: 200px;">
+    						<h5 class="gutter--s--1 text-color--white">Layer 0</h5>
+    					</div>
+    				</div>
+    				<div class="layer">
+    					<div style="background: rgba(0,0,0,.2); width: 200px; height: 200px;">
+    						<h5 class="gutter--s--1 text-color--white">Layer 1</h5>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		
+    	</div>
+
+   	</div>
+</div>

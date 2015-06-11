@@ -1,0 +1,77 @@
+<div class="block">
+	<div class="row">
+		<div class="column--s--12of12 gutter--s--1">
+			<div class="gutter-top--s--8">
+				<hr id="layout.ratio-container" class="border-color--celeste">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+
+<h1>rowlow.layout.ratio-container</h1>
+<p>A module for creating DOM container with a defined aspect ratio. Preconfigured ratios are 1by1, 4by3, 16by9 and 21by9, but can be extended upon your needs.</p>
+<h2>Install</h2>
+<pre><code class="language-css">bower install --save rowlow.layout.ratio-container</code></pre>
+<h2>Settings</h2>
+<pre><code class="language-css">rowlow-ratio-container-namespace // Specific module namespace
+    rowlow-ratios // List of ratios</code></pre>
+<h2>Usage</h2>
+<h3>SCSS</h3>
+<pre><code class="language-css">/* Set modules namespace (optional) */
+$rowlow-ratio-container-namespace: "namespace-";
+
+/* Overwrite ratio list (optional) */
+$rowlow-ratios: (
+    (1,1),
+    (4,3),
+    (16,9),
+    (21,9)
+)
+
+@import "bower_components/rowlow.layout.ratio-container/main.scss"</code></pre>
+<h3>HTML</h3>
+<pre><code class="language-markup">&lt;div class="ratio-container--s--21by9 ratio-container--l--16by9"&gt;&lt;/div&gt; </code></pre>
+	
+		<h2>Examples</h2>
+		<div class="row">
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--1by1">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>1 by 1</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--4by3">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>4 by 3</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--16by9">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>16 by 9</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column--s--3of12 gutter--s--1">
+				<div class="background-color--grey-200 ratio-container--s--21by9">
+					<div class="vertical-align-helper text-align--s--center">
+						<div class="vertical-align--s--middle">
+							<h5>21 by 9</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
